@@ -10,6 +10,8 @@
 ''' <summary>
 ''' This class only used for test Connections
 ''' </summary>
+''' </version>0.1
+''' </version>
 ''' <remarks>
 ''' If you need to use the Secuence Class, Using new Secuence(Object As OleDblConnection)
 ''' </remarks>
@@ -20,10 +22,10 @@
 ''' -----------------------------------------------------------------------------
 
 Public MustInherit Class Connection
-    Private Const HOST As String = "127.0.0.1"
-    Private Const PORT As String = "3302"
-    Private Const DB_PATH As String = "C:\Users\TR-X Homie\OneDrive\Documentos\"
-    Private Const DB_NAME As String = "Prueba1.mdb"
+    Private Const HOST As String = "127.0.0.1" 'IPHOST : is not necesary change'
+    Private Const PORT As String = "3302" 'PORT : is not necesary change'
+    Private Const DB_PATH As String = "C:\YOU_PATH\"
+    Private Const DB_NAME As String = "YOU_DATABASE.mdb"
     Private Const PROVIDER As String = "Microsoft.Jet.OLEDB.4.0"
     Private Const DRIVER As String = "Provider=" & PROVIDER & ";Data Source=" & DB_PATH & DB_NAME
     Private flag As Boolean
@@ -32,7 +34,7 @@ Public MustInherit Class Connection
     Private dapt As OleDbDataAdapter
 
     Public Function getConnection() As OleDbConnection
-        'WARNING: Do erase After ====================='
+        'WARNING: Do erase After in future version ============='
         Return con
     End Function
 

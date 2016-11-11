@@ -27,7 +27,7 @@ Public Module mainModule
         System.Console.Write(" -Begin- ")
         WriteConsoleFor(10, "=", False)
         
-        'DEFINE YOU DATABASE NAME IN CONNECT CLASS'
+        'DEFINE YOU DATABASE NAME IN CONNECTION CLASS'
         '<ToConnection>'
         Dim Sentences = New Secuence((New Connect).getConnection())
         'Do work for Any Query for Now'

@@ -26,16 +26,14 @@ Public Module mainModule
         WriteConsoleFor(10, "=", False)
         System.Console.Write(" -Begin- ")
         WriteConsoleFor(10, "=", False)
-        'Dim a = New Connect()
-
+        
+        'DEFINE YOU DATABASE NAME IN CONNECT CLASS'
+        '<ToConnection>'
         Dim Sentences = New Secuence((New Connect).getConnection())
-        'QueryString = INSERT INTO Tabla1([nombre]) VALUES(?)
-        'cmd.parameters.Add(New OleDbParameter('CType[NOMBRES_TRING, String])
-        'try cmd.executeNonQuery() cmd.dispose() con.Close
-
+        'Do work for Any Query for Now'
         Sentences.Send_QueryInsert("INSERT INTO Tabla1(nombre) VALUES('" & CType("Hello World", String) & "')")
-
-
+        '</ToConnection>
+        
         WriteConsoleFor(10, "=", False)
         System.Console.Write(" -END- ")
         WriteConsoleFor(10, "=", False)
@@ -48,6 +46,6 @@ Public Class Test
 
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        'Main()'
+        'Main()' //Remove if you Application Start with Form
     End Sub
 End Class

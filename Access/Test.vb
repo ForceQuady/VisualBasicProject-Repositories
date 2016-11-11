@@ -22,6 +22,7 @@
 ''' -----------------------------------------------------------------------------
 
 Public Module mainModule
+    ''' EXAMPLE ''''
     Public Sub Main()
         WriteConsoleFor(10, "=", False)
         System.Console.Write(" -Begin- ")
@@ -43,8 +44,7 @@ Public Module mainModule
 End Module
 
 Public Class Test
-
-
+    'You Form'
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         'Main()' //Remove if you Application Start with Form
     End Sub

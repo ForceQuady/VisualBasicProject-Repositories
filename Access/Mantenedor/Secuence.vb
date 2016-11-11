@@ -10,6 +10,7 @@
 ''' <summary>
 ''' This class only used for test Connections
 ''' </summary>
+''' <version>0.1</version>
 ''' <remarks>
 ''' If you need to use the Secuence Class, Using new Secuence(Object As OleDblConnection)
 ''' </remarks>
